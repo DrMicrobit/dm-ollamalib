@@ -1,9 +1,17 @@
 [project]
 name = "dm-ollamalib"
-version = "0.0.1"
-description = "Add your description here"
+version = "0.0.2"
+description = "Functions to parse from string and get info on Ollama options."
 readme = "README.md"
 requires-python = ">=3.13"
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+]
 dependencies = [
     "ollama>=0.4.6",
 ]
@@ -20,3 +28,8 @@ dev = [
     "rich>=13.9.4",
     "pre-commit>=4.1.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/DrMicrobit/dm-ollamalib"
+GitHub = "https://github.com/DrMicrobit/dm-ollamalib"
+Issues = "https://github.com/DrMicrobit/dm-ollamalib/issues"
