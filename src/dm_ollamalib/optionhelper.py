@@ -152,9 +152,9 @@ def _collect_ollama_options() -> list[tuple[str, str, bool]]:
 
 
 def to_ollama_options(options: str | Iterable[str]) -> dict[str, Any]:
-    """Transform a string with semicolon separated Ollama options to dict.
+    """Transform a string (or an Iterable of strings) with semicolon separated Ollama options to dict.
 
-    Ollama module wants the Ollama options as correct Python types in a dict,
+    The Python Ollama library wants the Ollama options as correct Python types in a dict,
     i.e., one cannot use strings. This functions transforms any string with
     Ollama options into a dict with correct types.
     Ollama uses a TypedDict, the dict[str, Any] returned by this function is compatible.
