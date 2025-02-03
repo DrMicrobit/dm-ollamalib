@@ -1,7 +1,7 @@
 [project]
 name = "dm-ollamalib"
-version = "0.0.2"
-description = "Functions to parse from string and get info on Ollama options."
+dynamic = ["version"]
+description = "Functions to parse Ollama options from string and get info on Ollama options."
 readme = "README.md"
 requires-python = ">=3.13"
 license = "MIT"
@@ -11,14 +11,28 @@ classifiers = [
     "Operating System :: OS Independent",
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
 ]
 dependencies = [
     "ollama>=0.4.6",
 ]
 
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "uv-dynamic-versioning"]
 build-backend = "hatchling.build"
+
+[tool.uv-dynamic-versioning]
+vcs = "git"
+style = "semver"
+
+# VScode / Even Better TOML will complain in next two sections
+# But works.
+[tool.hatch.version]
+source = "uv-dynamic-versioning"
+
+[tool.hatch.build.hooks.uv-dynamic-versioning]
+version-file = "src/dm_ollamalib/__version__.py"
+
 
 [dependency-groups]
 dev = [
