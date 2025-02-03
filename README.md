@@ -1,3 +1,6 @@
+![pylint workflow](https://github.com/DrMicrobit/dm-streamvalve/actions/workflows/pylint.yml/badge.svg)
+![pytest workflow](https://github.com/DrMicrobit/dm-streamvalve/actions/workflows/pytest.yml/badge.svg)
+
 # dm-ollamalib
 
 Python package: helper functions to parse Ollama options from a string. Also show available options.
