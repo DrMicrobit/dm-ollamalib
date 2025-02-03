@@ -1,3 +1,6 @@
+[MAIN]
+source-roots=src
+
 [FORMAT]
 max-line-length=110
 
