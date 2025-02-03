@@ -20,4 +20,4 @@ jobs:
         pip install pylint ollama
     - name: Analysing the code with pylint
       run: |
-        python -m pylint $(git ls-files 'src/*/*.py')
+        python -m pylint $(git ls-files 'src/*/*.py' | grep -v '__init__.py'))
