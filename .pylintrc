@@ -1,5 +1,5 @@
 [MAIN]
-source-roots=src/dm_ollamalib
+source-roots=src, src/dm_ollamalib
 
 [FORMAT]
 max-line-length=110
